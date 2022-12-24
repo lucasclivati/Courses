@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Aula 16</title>
+    <script src="https://kit.fontawesome.com/d2ab83620b.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+        *{
+        padding: 0px;
+        margin: 0px;
+        list-style: none;
+        color:#333;
+        box-sizing: border-box;
+        font-family: 'Silkscreen', cursive;
+        }
+        a:link, a:visited, a:active {
+            color:#333;
+            text-decoration:none;
+
+        }
+        body{
+            background-color: #ddd;
+        }
+        #main-header{
+            background-color: #6caaa8;
+            color:#fff;
+            padding: 20px;
+        }
+        #menu{
+            background-color: #fff;
+            width: 375px;
+            margin:10px 20px 30px 40px;
+            padding:20px;
+        }
+        #menu a{
+            display: block;
+            padding: 10px;
+        }
+        #menu i{
+            margin-right: 15px;
+            width: 30px;
+        }
+        #menu a:hover{
+            box-shadow: 0 0 15px -2px #333;
+        }
+        #menu header{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">Logo da empresa</header>
+    <nav id="menu">
+        <header><i class="fa-solid fa-bars"></i>Menu Principal</header>
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+            <li><a href="#"><i class="fa-solid fa-box"></i>Produtos</a></li>
+            <li><a href="#"><i class="fa-solid fa-handshake"></i>Serviços</a></li>
+            <li><a href="#"><i class="fa-solid fa-users-line"></i>Quem somos</a></li>
+            <li><a href="#"><i class="fa-solid fa-phone"></i>Contato</a></li>
+            <li><a href="#"><i class="fa-solid fa-person-circle-plus"></i>Trabalhe conosco</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

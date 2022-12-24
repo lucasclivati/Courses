@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 24</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">DEV WEB</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-principal">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <div id="menu-principal" class="navbar-collapse collapse">
+                <ul class="navbar-nav me-auto">
+                    <li>
+                        <a href="#" class="nav-link">Início</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link">Serviços</a>
+                    </li>
+                </ul>
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle text-light text-decoration-none" data-bs-toggle="dropdown">
+                        <img src="img/avatar.jpg" alt="Avatar" width="50" height="50" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-md-end dropdown-menu-dark">
+                        <li><a href="#" class="dropdown-item">Meus dados</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a href="#" class="dropdown-item">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container-fluid p-4">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a href="#conteudo-1" class="nav-link active" data-bs-toggle="tab">Lorem, ipsum 1</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#conteudo-2" class="nav-link" data-bs-toggle="tab">Lorem, ipsum 2</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#conteudo-3" class="nav-link" data-bs-toggle="tab">Lorem, ipsum 3</a>
+                </li>
+            </ul>
+            <div id="conteudo" class="tab-content py-3">
+                <div id="conteudo-1" class="tab-pane fade active show">
+                    <img src="img/tab-01.jpg" alt="Tab 01" class="d-block rounded-4 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis possimus a dolor, eaque facilis ex et perspiciatis accusamus quo quos.
+                </div>
+                <div id="conteudo-2" class="tab-pane fade">
+                    <img src="img/tab-02.jpg" alt="Tab 02" class="d-block rounded-4 mb-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque minima quae doloribus nihil itaque. 
+                    Enim nesciunt a adipisci dolores hic perferendis error rem, 
+                    vitae omnis asperiores molestiae velit voluptatem, 
+                    quod soluta iure, sint minima harum cupiditate cumque magnam id sequi? 
+                    Odit accusamus dicta quasi beatae esse officia eveniet, possimus quas.
+                </div>
+                <div id="conteudo-3" class="tab-pane fade">
+                    <img src="img/tab-03.jpg" alt="Tab-03" class="d-block rounded-4 mb-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas officiis quisquam cum eum corrupti blanditiis, 
+                    sed, quasi eius perspiciatis suscipit deserunt inventore itaque nostrum impedit.
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

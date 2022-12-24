@@ -1,0 +1,18 @@
+.card{
+    background-color: grey;
+    width: 400px;
+    padding: 20px;
+    margin: 10px;
+}
+.card-blue{
+    background-color: rgb(13,93,147);
+}
+.card-red{
+    background-color: rgb(200,65,48);
+}
+.card-orange{
+    background-color: rgb(174,116,14);
+}
+body{
+    background-color:rgb(72,72,72)
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 17</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+        *{
+            margin:0px;
+            padding: 0px;
+            list-style: none;
+            color: #333;
+            font-family: 'Silkscreen', cursive;
+        }
+        a:link,a:visited,a:active{
+            color:#333;
+            text-decoration: none;
+        }
+        body{
+            background-image: url('img/background.jpg');
+            background-attachment: fixed;
+        }
+        #main-header{
+            background-color: #fff;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+        main{
+            margin-top: 130px;
+        }
+        .container{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .post{
+            background-color: #fff;
+            border-radius: 15px;
+            text-align: justify;
+        }
+        .post-image img{
+            border-radius: 15px 15px 0px 0px;
+            width: 100%;
+        }
+        .post-content h2{
+            font-family: 'Silkscreen', cursive;
+            text-align: center;
+            margin: 10px;
+            line-height: 1.2em;
+        }
+        .post-content p {
+            line-height: 1.5em;
+            margin-bottom: 15px;
+        }
+        .post-footer {
+            line-height: 0.5em;
+            margin-bottom: 25px;
+            border-top: 10px solid #ddd;
+            font-style: italic;
+        }
+        .post-button{
+            margin:20px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1.5em;
+            margin-bottom: 10px;
+            font-size: 1.4em;
+            border: 0px groove #333;
+        }
+        .post-button a {
+            border: 1px solid #333;
+            padding: 10px 30px;
+            transition: all 0.5s;
+        }
+        .post-button a:hover{
+            background-color: #444;
+            color:#ddd;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <h1><img src="img/logo.png" alt="Logo da empresa"></h1>
+    </header>
+    <main>
+        <div class="container">
+            <article class="post">
+                <div class="post-image">
+                    <figure>
+                        <img src="img/post-1.jpg" alt="Post 1">
+                    </figure>
+                </div>
+                <div class="post-content">
+                    <h2>O DAVID NÃO FEZ ESSA AULA AINDA</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ea nisi aliquid aperiam aliquam tenetur facilis quibusdam? 
+                        Labore ipsum corporis sit? Sit magni veritatis accusamus repellat dolore nobis eius ipsa explicabo dolorum, illum commodi sed. 
+                        Molestias quod laborum obcaecati magnam velit sint quibusdam blanditiis? Ipsum earum expedita inventore labore aliquam.
+                    </p>
+                </div>
+                <div class="post-button">
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="post-footer">
+                    Postado por: User em Agosto/2022
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-image">
+                    <figure>
+                        <img src="img/post-2.jpg" alt="Post 2">
+                    </figure>
+                </div>
+                <div class="post-content">
+                    <h2>O NETO NUNCA VAI FAZER ESSA AULA</h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo ea nisi aliquid aperiam aliquam tenetur facilis quibusdam? 
+                        Labore ipsum corporis sit? Sit magni veritatis accusamus repellat dolore nobis eius ipsa explicabo dolorum, illum commodi sed. 
+                        Molestias quod laborum obcaecati magnam velit sint quibusdam blanditiis? Ipsum earum expedita inventore labore aliquam.
+                    </p>
+                </div>
+                <div class="post-button">
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="post-footer">
+                    Postado por: User em Julho/2022
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
