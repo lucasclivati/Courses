@@ -15,3 +15,7 @@ Git/Github - Módulo Único
 2) Udesc Full Stack
 
 Html / CSS | |Bootstrap | SQL | Lógica programação | PHP | JavaScript
+
+3) ConquerPLUS
+
+SQL
