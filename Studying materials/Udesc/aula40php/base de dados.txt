@@ -1,0 +1,15 @@
+CREATE DATABASE aula_40;
+
+USE aula_40;
+
+CREATE TABLE Produto (
+    produto_id INT AUTO_INCREMENT NOT NULL,
+    nome VARCHAR(50) NOT NULL,
+    descricao VARCHAR(1000) NOT NULL,
+    marca VARCHAR(50) NOT NULL,
+    preco FLOAT NOT NULL,
+    imagem VARCHAR(150),
+
+    PRIMARY KEY (produto_id)
+);
+
