@@ -51,6 +51,26 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+        <script>
+            $('#form-pessoa').submit(function(){
+                exibirPessoa();
+
+
+                return false;
+            });
+
+
+            //incluir uma nova pessoa na tabela
+            function exibirPessoa() {
+                let pessoa;
+                pessoa = {
+                    nome : $('#nome').val(),
+                    email : $('#email').val(),
+                    telefone : $('#telefone').val()
+                };
+                console.log(pessoa);
+            }
+        </script>
 </body>
 
 </html>
