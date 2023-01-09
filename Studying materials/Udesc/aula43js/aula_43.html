@@ -52,13 +52,17 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script>
+            //load da página
+            carregarPessoas();
+
+            //no envio do formulário
             $('#form-pessoa').submit(function(){
                 exibirPessoa();
+                salvarPessoas();
 
 
                 return false;
             });
-
 
             //incluir uma nova pessoa na tabela
             function exibirPessoa() {
@@ -68,8 +72,56 @@
                     email : $('#email').val(),
                     telefone : $('#telefone').val()
                 };
-                console.log(pessoa);
-            }
+
+                let html;
+                html = '<tr>\
+                            <td>' + pessoa.nome + '</td>\
+                            <td>' + pessoa.email + '</td>\
+                            <td>' + pessoa.telefone + '</td>\
+                        </tr>';
+                $('#table-pessoa tbody').prepend(html);
+
+                $('#form-pessoa input').val('');
+            };
+
+            // Salvar pessoas localmente no nosso navegador
+            function salvarPessoas() {
+                let pessoas, pessoaAtual;
+                pessoas = [];
+                $('#table-pessoa tbody tr').each(function() {
+                    pessoaAtual = {
+                        nome : $(this).find('td:eq(0)').text(),
+                        email : $(this).find('td:eq(1)').text(),
+                        telefone : $(this).find('td:eq(2)').text()
+                    }
+
+                    pessoas.push(pessoaAtual);
+                });
+                
+                let json;
+                json = JSON.stringify(pessoas);
+
+                localStorage.setItem('pessoas', json);
+            };
+
+            //Consultar pessoas salvas no navegador
+
+            function carregarPessoas() {
+                let json, pessoas, html;
+                json = localStorage.getItem('pessoas');
+                if (json) {
+                    pessoas = JSON.parse(json);
+                    $(pessoas).each(function(){
+                        html = '<tr>\
+                            <td>' + $(this)[0].nome + '</td>\
+                            <td>' + $(this)[0].email + '</td>\
+                            <td>' + $(this)[0].telefone + '</td>\
+                        </tr>';
+                        $('#table-pessoa tbody').append(html);
+                    })
+                }
+            };
+
         </script>
 </body>
 
