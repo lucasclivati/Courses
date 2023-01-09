@@ -45,4 +45,18 @@
         </div>
     </div>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script>
+    $('.btn-escolher-plano').click(function(){
+        //limpar formatação dos cards
+        $('.card').removeClass('border-primary');
+        $('.card-header').removeClass('text-white bg-primary');
+        $('.btn-escolher-plano').removeClass('btn-primary').addClass('btn-outline-primary');
+
+        //aplicar formatação somente ao elemento selecionado
+        $(this).parents('.card').addClass('border-primary');
+        $(this).parent().prev().addClass('text-white bg-primary');
+        $(this).removeClass('btn-outline-primary').addClass('btn-primary');
+    });
+</script>
 </html>

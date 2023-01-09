@@ -27,13 +27,20 @@
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script>
     $('#btn-ocultar').click(function (){
-        $('#box').hide()
+        $('#box').hide();
+        $('.btn').removeClass('active');
+        $(this).addClass('active');
+
     });
     $('#btn-mostrar').click(function (){
-        $('#box').show()
+        $('#box').show();
+        $('.btn').removeClass('active');
+        $(this).addClass('active');
     });
     $('#btn-alternar').click(function (){
-        $('#box').toggle()
+        $('#box').toggle();
+        $('.btn').removeClass('active');
+        $(this).addClass('active');
     });
 </script>
 </html>
