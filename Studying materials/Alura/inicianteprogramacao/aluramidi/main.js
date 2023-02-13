@@ -27,7 +27,7 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
     }
     tecla.onkeydown = function (evento){
         console.log(evento.code)
-        if(''){
+        if(evento.code === 'Space'){
             tecla.classList.add('ativa');
         }
         
