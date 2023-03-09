@@ -3,8 +3,10 @@ let legumes = [];
 let congelados = [];
 let doces = [];
 
+let add = "sim";
 
-add = prompt("Deseja adicionar um item a lista? Responda SIM ou NAO.");
+while (add != "nao"){
+    add = prompt("Deseja adicionar um item a lista? Responda SIM ou NAO.");
 
 if(add=="SIM" || add=="Sim" || add=="sim" || add=="siM" || add=="sIm"){
     item = prompt("Qual item você deseja adicionar?")
@@ -21,9 +23,12 @@ if(add=="SIM" || add=="Sim" || add=="sim" || add=="siM" || add=="sIm"){
             alert("Categoria inválida. Tente adicionar novamente.")
         }
     } else if (add=="NAO" || add=="NO" || add=="Não" || add=="NÃO" || add=="NÃo" || add=="não" || add=="nao" || add=="nÃo" || add=="nÃO"){
-        console.log("não")
+        break;
     } else {
         alert("Resposta não permitida. Por favor responda novamente.");
         add = prompt("Deseja adicionar um item a lista? Responda SIM ou NAO.");
     }
+}
+    alert(`Lista de compras:\n  Verduras: ${verduras}\n  Legumes: ${legumes}\n  Doces: ${doces}\n  Congelados: ${congelados}`);
+
 
