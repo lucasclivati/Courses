@@ -9,7 +9,7 @@ while (i<chances) {
     adivinhar = prompt("Adivinhe um número de 1 a 10. Ex: 3");
     if (adivinhar == numero1a10){
         alert('Você acertou! O número era '+adivinhar +'!');
-        exit;
+        break;
     } else {
         i= i+1;
         chancesRestantes= chancesRestantes-1;
